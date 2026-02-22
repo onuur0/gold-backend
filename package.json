@@ -1,0 +1,29 @@
+{
+  "name": "gold-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node api.js",
+    "dev": "nodemon api.js",
+    "worker": "node server.js",
+    "prod": "pm2 start ecosystem.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "mongoose": "^9.2.1",
+    "node-cron": "^4.2.1",
+    "nodemon": "^3.1.14",
+    "xml2js": "^0.6.2"
+  }
+}
