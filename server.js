@@ -10,7 +10,10 @@ async function fetchAndSave() {
   try {
     console.log("API'ye bağlanıyorum...");
 
-    const response = await axios.get("https://altinapp.tamergunes.net/api/Service");
+    const response = await axios.get("https://altinapp.tamergunes.net/api/Service", {
+      headers: { 'User-Agent': 'curl/7.81.0' },
+      timeout: 15000
+    });
     const data = response.data[0];
 
     if (!data) {
